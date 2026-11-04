@@ -420,18 +420,17 @@ a.back-button {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 13px;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 .memory-card {
+  width: 100%;
   position: relative;
   aspect-ratio: 1.12;
   border: 1px solid #8b693b;
   background: #2b2118;
   padding: 0;
   cursor: pointer;
-  perspective: 700px;
-  min-width: 0;
 }
 .memory-card:focus-visible {
   outline: 2px solid var(--gold-light);
@@ -727,6 +726,18 @@ a.back-button {
   }
   .history-table td {
     padding: 11px 6px;
+  }
+}
+
+@media (max-width: 500px) {
+  .game-board {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .memory-card {
+    width: 25vw;
   }
 }
 @media (max-width: 370px) {
