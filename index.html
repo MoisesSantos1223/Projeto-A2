@@ -1,16 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jogo da Memória</title>
-  <!-- Estilos do projeto. -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <!-- Conteúdo do projeto. -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17130f" />
+    <meta
+      name="description"
+      content="Um jogo da memória com personagens de RPG medieval em pixel art."
+    />
+    <title>Crônicas de Eldoria — Jogo da Memória</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="menu-page">
+    <video
+      class="bg-video"
+      src="imgs/interface/cards.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      aria-hidden="true"
+    ></video>
+    <div class="bg-video-overlay" aria-hidden="true"></div>
 
-  <!-- Interações do projeto. -->
-  <script src="js/script.js"></script>
-</body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Voltar ao menu">
+          <span class="brand-mark">✦</span
+          ><span>CRÔNICAS DE <b>ELDORIA</b></span>
+        </a>
+        <span class="topbar-caption">◆ ARQUIVOS DA GUILDA ◆</span>
+      </header>
+
+      <section class="screen menu-screen active">
+        <div class="hero-emblem" aria-hidden="true"><span>⚔</span></div>
+        <p class="eyebrow">UM DESAFIO DE MEMÓRIA</p>
+        <h1>Crônicas de <span>Eldoria</span></h1>
+        <p class="intro">
+          Reúna os heróis, encontre seus pares e prove seu valor diante da
+          guilda.
+        </p>
+        <nav class="menu-actions" aria-label="Menu principal">
+          <a class="menu-button primary" href="pages/jogo.html">
+            <span>⚔</span> Começar aventura
+          </a>
+          <a class="menu-button" href="pages/personagens.html">
+            <span>♜</span> Personagens
+          </a>
+          <a class="menu-button" href="pages/history.html">
+            <span>📜</span> Histórico
+          </a>
+          <a class="menu-button" href="pages/configuracoes.html">
+            <span>⚙</span> Configurações
+          </a>
+        </nav>
+        <div class="menu-footer">
+          <span>✧</span> A memória é sua maior arma <span>✧</span>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        FEITO PARA AVENTUREIROS • ELDORIA © 2026
+      </footer>
+    </main>
+  </body>
 </html>

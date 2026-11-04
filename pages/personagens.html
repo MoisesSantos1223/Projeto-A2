@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17130f" />
+    <meta name="description" content="Conheça os heróis de Eldoria." />
+    <title>Personagens — Crônicas de Eldoria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="../index.html" aria-label="Voltar ao menu">
+          <span class="brand-mark">✦</span
+          ><span>CRÔNICAS DE <b>ELDORIA</b></span>
+        </a>
+        <span class="topbar-caption">◆ ARQUIVOS DA GUILDA ◆</span>
+      </header>
+
+      <section class="screen content-screen active">
+        <a class="back-button" href="../index.html">← Voltar ao menu</a>
+        <p class="eyebrow">COMPÊNDIO DA GUILDA</p>
+        <h2>Heróis de <span>Eldoria</span></h2>
+        <p class="section-description">
+          Estes são os personagens que você encontrará durante a aventura.
+        </p>
+        <div id="character-list" class="character-list"></div>
+      </section>
+
+      <footer class="site-footer">
+        FEITO PARA AVENTUREIROS • ELDORIA © 2026
+      </footer>
+    </main>
+    <script type="module" src="../js/pages/characters-page.js"></script>
+  </body>
+</html>

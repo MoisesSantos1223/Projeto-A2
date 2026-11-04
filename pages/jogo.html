@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17130f" />
+    <meta
+      name="description"
+      content="Encontre os pares de heróis o mais rápido que puder."
+    />
+    <title>Partida — Crônicas de Eldoria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="../index.html" aria-label="Voltar ao menu">
+          <span class="brand-mark">✦</span
+          ><span>CRÔNICAS DE <b>ELDORIA</b></span>
+        </a>
+        <span class="topbar-caption">◆ ARQUIVOS DA GUILDA ◆</span>
+      </header>
+
+      <section id="game-screen" class="screen game-screen active">
+        <div class="game-heading">
+          <div>
+            <p class="eyebrow">DESAFIO DA GUILDA</p>
+            <h2>Encontre os <span>pares</span></h2>
+          </div>
+          <a class="back-button" href="../index.html">✕ Sair da partida</a>
+        </div>
+        <div class="game-stats">
+          <div class="stat">
+            <span class="stat-icon">◷</span>
+            <div>
+              <small>TEMPO</small><strong id="timer-display">00:00</strong>
+            </div>
+          </div>
+          <div class="stat">
+            <span class="stat-icon">⚔</span>
+            <div>
+              <small>MOVIMENTOS</small><strong id="moves-display">0</strong>
+            </div>
+          </div>
+          <div class="stat">
+            <span class="stat-icon">✦</span>
+            <div>
+              <small>PARES</small><strong id="pairs-display">0 / 6</strong>
+            </div>
+          </div>
+        </div>
+        <div
+          id="game-board"
+          class="game-board"
+          aria-label="Tabuleiro do jogo da memória"
+        ></div>
+        <p class="game-hint">
+          Encontre dois personagens iguais para formar um par.
+        </p>
+      </section>
+
+      <section id="victory-screen" class="screen victory-screen">
+        <div class="victory-seal">✦</div>
+        <p class="eyebrow">MISSÃO CONCLUÍDA</p>
+        <h2>Vitória, <span>aventureiro!</span></h2>
+        <p class="victory-copy">
+          Todos os heróis foram reunidos. A guilda reconhece sua conquista.
+        </p>
+        <div class="victory-stats">
+          <div>
+            <small>TEMPO TOTAL</small><strong id="final-time">00:00</strong>
+          </div>
+          <div>
+            <small>MOVIMENTOS</small><strong id="final-moves">0</strong>
+          </div>
+        </div>
+        <div class="victory-actions">
+          <button class="menu-button primary" data-action="restart">
+            ↻ Jogar novamente
+          </button>
+          <a class="menu-button" href="history.html">
+            <span>📜</span> Ver histórico
+          </a>
+          <a class="menu-button" href="../index.html">⌂ Voltar ao menu</a>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        FEITO PARA AVENTUREIROS • ELDORIA © 2026
+      </footer>
+    </main>
+    <script type="module" src="../js/pages/game-page.js"></script>
+  </body>
+</html>
